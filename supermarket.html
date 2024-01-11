@@ -7,14 +7,25 @@
 </head>
 <body>
     <script>
-        let TotalBelanja = 15212;
-        let uang = 20000; 
-        let hasil = TotalBelanja / 100; 
-        let HargaAsli = Math.round(hasil) * 100; 
-        let kembalian = uang - HargaAsli; 
-        document.write("kembalian nya = " + kembalian); 
-        document.write(" <br> harga yg di bulatkan =" + HargaAsli); 
-        document.write(" <br>ini uang yang di miliki = " + uang);
+        // let TotalBelanja = 15212;
+        // let uang = 20000; 
+        // let hasil = TotalBelanja / 100; 
+        // let HargaAsli = Math.round(hasil) * 100; 
+        // let kembalian = uang - HargaAsli; 
+        // document.write("kembalian nya = " + kembalian); 
+        // document.write(" <br> harga yg di bulatkan =" + HargaAsli); 
+        // document.write(" <br>ini uang yang di miliki = " + uang);
+
+        let pendapatan = 300000;
+        if (pendapatan>=0 && pendapatan<=200000){
+            jasa=100000;
+            komisi=0.1*pendapatan;
+        } else if (pendapatan<=500000){
+            jasa=20000;
+            komisi=0.15*pendapatan;
+        }
+        total = komisi + jasa;
+        console.log(`total yang didapat karyawan x sebesar $(total)`)
     </script>
 </body>
 </html>
