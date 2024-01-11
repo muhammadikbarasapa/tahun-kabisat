@@ -22,6 +22,9 @@
             komisi=0.1*pendapatan;
         } else if (pendapatan<=500000){
             jasa=20000;
+            komisi=0.15*pendapatan;
+        } else{
+            jasa=30000;
             komisi=0.2*pendapatan;
         }
         total = komisi + jasa;
